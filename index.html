@@ -1,0 +1,393 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New2</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="container">
+      <div class="logo">
+        <img src="logo.png" alt="Logo">
+      </div>
+      <div class="user-actions">
+        <a href="#">Sign In</a>
+        <a href="#">Sign Up</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- main-content -->
+  <div class="lalit-1">
+    <h4>Real Estate CRM: Create your own website </h4>
+  </div>
+  <div class="lalit-1">
+    <div class="breadcrumb">
+      <a href="#content">Content</a> <span style="font-size: 1.5em;">></span>
+      <a href="#design">Design</a> <span style="font-size: 1.5em;">></span>
+      <a href="#publish">Publish</a>
+    </div>
+  </div>
+
+  <div class="lalit-2">
+    <div class="lalit-content">
+      <section id="content">
+        <h2>Content Section</h2>
+        <form action="process_page.php" method="POST">
+          <label for="url">Enter Page URL:</label><br>
+          <input type="text" id="url" name="url" placeholder="e.g., my-page-url" required><br>
+          <input type="submit" value="Create Page">
+        </form>
+        <br>
+        <style>
+          label {
+            font-weight: bold;
+          }
+
+          input[type="text"] {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          }
+
+          input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+          }
+
+          input[type="submit"]:hover {
+            background-color: #fFF; /* Light hover background */
+            color: #333;
+            border: 2px solid #333;
+          }
+        </style>
+
+        <div class="image-gallery">
+          <div class="thumbnail" onclick="showImage('image1.jpg')">
+            <img src="T4.png" alt="Template 1">
+          </div>
+          <div class="thumbnail" onclick="showImage('image2.jpg')">
+            <img src="T5.png" alt="Template 2">
+          </div>
+          <div class="thumbnail" onclick="showImage('image3.jpg')">
+            <img src="T3.jpeg" alt="Template 3">
+          </div>
+        </div>
+        <br>
+
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Title
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                title here....
+
+                This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default va
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                description
+              </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Price
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Amenities
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Images
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                Geolocation
+              </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse
+                plugin adds the appropriate classes that we use to style each element. These classes control the overall
+                appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with
+                custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go
+                within the <code>.accordion-body</code>, though the transition does limit overflow.
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </section>
+
+      <section id="design" style="display: none;">
+        <h2>Design Section</h2>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-expanded="true" aria-controls="collapseOne">
+                Color
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <div class="color-options">
+                  <div class="color-circle" style="background-color: #FF5733;" onclick="selectColor('#FF5733')"></div>
+                  <div class="color-circle" style="background-color: #33FF57;" onclick="selectColor('#33FF57')"></div>
+                  <div class="color-circle" style="background-color: #3357FF;" onclick="selectColor('#3357FF')"></div>
+                  <div class="color-circle" style="background-color: #F1C40F;" onclick="selectColor('#F1C40F')"></div>
+                  <div class="color-circle" style="background-color: #E67E22;" onclick="selectColor('#E67E22')"></div>
+                  <div class="color-circle" style="background-color: #2ECC71;" onclick="selectColor('#2ECC71')"></div>
+                  <div class="color-circle" style="background-color: #3498DB;" onclick="selectColor('#3498DB')"></div>
+                  <div class="color-circle" style="background-color: #9B59B6;" onclick="selectColor('#9B59B6')"></div>
+                  <div class="color-circle" style="background-color: #34495E;" onclick="selectColor('#34495E')"></div>
+                  <div class="color-circle" style="background-color: #16A085;" onclick="selectColor('#16A085')"></div>
+                  <div class="color-circle" style="background-color: #F39C12;" onclick="selectColor('#F39C12')"></div>
+                  <div class="color-circle" style="background-color: #D35400;" onclick="selectColor('#D35400')"></div>
+                  <div class="color-circle" style="background-color: #C0392B;" onclick="selectColor('#C0392B')"></div>
+                  <div class="color-circle" style="background-color: #2980B9;" onclick="selectColor('#2980B9')"></div>
+                  <div class="color-circle" style="background-color: #8E44AD;" onclick="selectColor('#8E44AD')"></div>
+                </div>
+                <div class="color-choose">
+                  <div class="color-picker">
+                    <label for="primary-color">Primary Color:</label>
+                    <input type="text" id="primary-color" placeholder="#061244">
+                
+                    <label for="secondary-color">Secondary Color:</label>
+                    <input type="text" id="secondary-color" placeholder="#a07ddaff">
+                
+                    <label for="primary-profile-text-color">Primary Profile Text Color:</label>
+                    <input type="text" id="primary-profile-text-color" placeholder="#ffffff">
+                
+                    <label for="secondary-profile-text-color">Secondary Profile Text Color:</label>
+                    <input type="text" id="secondary-profile-text-color" placeholder="#ffffff">
+                
+                    <label for="primary-text-color">Primary Text Color:</label>
+                    <input type="text" id="primary-text-color" placeholder="#061244">
+                
+                    <label for="secondary-text-color">Secondary Text Color:</label>
+                    <input type="text" id="secondary-text-color" placeholder="#061244">
+                  </div>
+                </div>
+                
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                  Font
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <div class="font-options">
+                    <div class="font-option" style="font-family: 'Arial', sans-serif;">Arial
+                    </div>
+                    <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
+                    </div>
+                    <div class="font-option" style="font-family: 'Courier New', monospace;">
+                      Courier New</div>
+                    <div class="font-option" style="font-family: 'Georgia', serif;">Georgia
+                    </div>
+                    <div class="font-option" style="font-family: 'Times New Roman', serif;">
+                      Times New Roman</div>
+                    <div class="font-option" style="font-family: 'Trebuchet MS', sans-serif;">
+                      Trebuchet MS</div>
+                    <div class="font-option" style="font-family: 'Comic Sans MS', cursive;">
+                      Comic Sans MS</div>
+                    <div class="font-option" style="font-family: 'Impact', sans-serif;">Impact
+                    </div>
+                    <div class="font-option" style="font-family: 'Lucida Console', monospace;">
+                      Lucida Console</div>
+                    <div class="font-option" style="font-family: 'Palatino Linotype', serif;">
+                      Palatino Linotype</div>
+                    <div class="font-option" style="font-family: 'Tahoma', sans-serif;">Tahoma
+                    </div>
+                    <div class="font-option" style="font-family: 'Segoe UI', sans-serif;">Segoe
+                      UI</div>
+                    <div class="font-option" style="font-family: 'Baskerville', serif;">
+                      Baskerville</div>
+                    <div class="font-option" style="font-family: 'Garamond', serif;">Garamond
+                    </div>
+                    <div class="font-option" style="font-family: 'Arial Black', sans-serif;">
+                      Arial Black</div>
+                    <div class="font-option" style="font-family: 'Arial Narrow', sans-serif;">
+                      Arial Narrow</div>
+                    <div class="font-option" style="font-family: 'Bookman Old Style', serif;">
+                      Bookman Old Style</div>
+                    <div class="font-option" style="font-family: 'Futura', sans-serif;">Futura
+                    </div>
+                    <div class="font-option" style="font-family: 'Rockwell', serif;">Rockwell
+                    </div>
+                    <div class="font-option" style="font-family: 'Optima', sans-serif;">Optima
+                    </div>
+                    <div class="font-option" style="font-family: 'Verdana', sans-serif;">Verdana
+                    </div>
+                    <div class="font-option" style="font-family: 'Helvetica', sans-serif;">
+                      Helvetica</div>
+                    <div class="font-option" style="font-family: 'Frank Ruhl Libre', serif;">
+                      Frank Ruhl Libre</div>
+                    <div class="font-option" style="font-family: 'Merriweather', serif;">
+                      Merriweather</div>
+                    <div class="font-option" style="font-family: 'Lora', serif;">Lora</div>
+                    <div class="font-option" style="font-family: 'Roboto', sans-serif;">Roboto
+                    </div>
+                    <div class="font-option" style="font-family: 'Montserrat', sans-serif;">
+                      Montserrat</div>
+                    <div class="font-option" style="font-family: 'Poppins', sans-serif;">Poppins
+                    </div>
+                    <div class="font-option" style="font-family: 'Source Sans Pro', sans-serif;">Source
+                      Sans
+                      Pro
+                    </div>
+                    <div class="font-option" style="font-family: 'Raleway', sans-serif;">Raleway
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+
+
+      <section id="publish" style="display: none;">
+        <h2>Publish Section</h2>
+        <p>This is where you publish your work.</p>
+      </section>
+    </div>
+
+    <div class="lalit-mobile">
+      <div class="container right">
+        <div class="mobile">
+          <div class="notch"></div>
+          <iframe src="/Team1_sitesoch2/"></iframe>
+          <style>
+            /* Target the iframe */
+            iframe {
+              width: 100%;
+              /* Set width to 100% of its container */
+              height: 100%;
+            }
+          </style>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <footer>
+    <div class="footer-container">
+      <div class="copyright">
+        &copy; 2024 Company Name. All rights reserved.
+      </div>
+      <div class="social-icons">
+        <a href="#" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i> Instagram
+        </a>
+        <a href="#" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i> Twitter
+        </a>
+        <a href="#" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook-f"></i> Faceook
+        </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
